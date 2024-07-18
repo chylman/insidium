@@ -3,6 +3,8 @@ const fromWednesdayToSaturday = document.querySelectorAll('[data-from-wednesday-
 const fromSundayToWednesday = document.querySelectorAll('[data-from-sunday-to-wednesday]');
 
 if (currentDate.getDay() >= 4 && currentDate.getDay() < 7) {
+    console.log(currentDate.getDay() >= 4)
+    console.log(fromWednesdayToSaturday)
     fromSundayToWednesday.forEach(item => {
         item.classList.add('hidden')
     })
